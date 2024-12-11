@@ -34,7 +34,7 @@ def find_first_word(start: list[str]) -> str:
     Finds starting sequence in tokens list or chooses random token if it doesn't exist
     """
     if len(start) > 0:
-        if len(start) > 1:
+        if len(start) > n:
             new_start = []
             for i in range(len(start) // n):
                 new_start.append(" ".join(start[i * n:(i + 1) * n]))
